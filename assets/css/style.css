@@ -221,7 +221,9 @@
 
 .slider-one_title{
 	position: relative;
-	font-size: 14px;
+	font-size: 1.8em;
+	margin-left: 10px;
+	margin-bottom: 1.5em;
 	line-height: 24px;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -246,10 +248,13 @@
 }
 
 .slider-one_heading{
-	margin-top: 12px;
+	margin-top: 0.7em;
 	margin-bottom:25px;
+	line-height: 0.8em;
 	color: var(--white-color);
 	text-transform: capitalize;
+	transform: scaleX(1.6) scaleY(1.6);
+    transform-origin: left center;
 
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
@@ -483,7 +488,7 @@
 
 .services-one{
 	position:relative;
-	padding:100px 0px 70px;
+	padding:10px 0px 10px;
 }
 
 .services-one .four-items_carousel-pagination{
@@ -667,7 +672,7 @@
 	max-width:1760px;
 	margin:0 auto;
 	border-radius:24px;
-	padding:65px 0px 85px;
+	padding:65px 0px 30px;
 	background-color:var(--color-three);
 }
 
@@ -1275,6 +1280,7 @@
 	position:relative;
 	padding:30px 30px;
 	overflow:hidden;
+	align-items:center;
 	border-radius:8px;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
@@ -1284,25 +1290,45 @@
 	background-color:var(--white-color);
 }
 
-.program-block_one-image{
-	position:relative;
-	overflow:hidden;
-	overflow:hidden;
-	border-radius:8px;
-	background-color:var(--main-color);
+.program-block_one-image {
+    position: relative;
+    width: 60vw; /* 60% of viewport width */
+    max-width: 370px;
+    aspect-ratio: 1 / 1; /* Ensures it's a perfect circle */
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto; /* Optional: centers the circle horizontally */
 }
 
-.program-block_one-image img{
-	position:relative;
-	width:100%;
-	display:block;
-	border-radius:8px;
-	overflow:hidden;
-	transition:all 500ms ease;
-	-moz-transition:all 500ms ease;
-	-webkit-transition:all 500ms ease;
-	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
+/* Optional fine-tuning for smaller screens */
+@media (max-width: 768px) {
+    .program-block_one-image {
+        width: 50vw;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-block_one-image {
+        width: 70vw;
+        max-width: 200px;
+    }
+}
+}
+
+.program-block_one-image img {
+    width: 90%;
+    object-fit: cover; /* Ensures the image fills the circular container */
+    border-radius: 50%; /* Ensures the image takes the circular shape */
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
 }
 
 .program-block_one-inner:hover .program-block_one-image img{
@@ -1314,11 +1340,11 @@
 	position:absolute;
 	right:8px;
 	top:-28px;
-	width:55px;
-	height:55px;
+	width:90px;
+	height:90px;
 	font-size:28px;
 	font-weight:700;
-	padding-top:8px;
+	padding-top:23px;
 	text-align:center;
 	border-radius:50px;
 	color:var(--white-color);
@@ -1328,7 +1354,7 @@
 .program-block_one-date span{
 	position:relative;
 	display:block;
-	font-size:12px;
+	font-size:17px;
 	font-weight:400;
 	text-transform:uppercase;
 }
@@ -1374,7 +1400,7 @@
 
 .program-block_one-join{
 	position:relative;
-	font-size:18px;
+	font-size:24px;
 	font-weight:600;
 	color:var(--color-four);
 }
@@ -8213,3 +8239,9 @@
 	font-size: 18px;
 	color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+	.responsive-img {
+	  width: 90% !important;
+	}
+  }
