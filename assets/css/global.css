@@ -62,8 +62,8 @@
 :root {
 	
 	/* #F4831F in decimal RGB */
-	--main-color: rgb(244,131,31);
-	--main-color-rgb:244,131,31;
+	--main-color: rgb(253,243,234);
+	--main-color-rgb:253,243,234;
 	
 	/* #08C76A in decimal RGB */
 	--color-two: rgb(8,199,106);
@@ -78,8 +78,8 @@
 	--color-four-rgb:0,45,69;
 	
 	/* #fdf3ea in decimal RGB */
-	--color-five: rgb(253,243,234);
-	--color-five-rgb:253,243,234;
+	--color-five: rgb(244,131,31);
+	--color-five-rgb:244,131,31;
 	
 	/* #FFE68D in decimal RGB */
 	--color-six: rgb(255,230,141);
@@ -500,7 +500,7 @@ img{
 	position: absolute;
     top: 100%;
     display: block;
-	color: var(--white-color);
+	color: var(--color-five);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -514,7 +514,7 @@ img{
 }
 
 .btn-style-one:hover .btn-wrap .text-two{
-	color: var(--white-color);
+	color: var(--color-five);
 }
 
 .btn-style-one:hover{
