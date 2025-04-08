@@ -176,7 +176,7 @@
 	
 	.main-header{
 		position:relative;
-		background-color: var(--color-two);
+		background-color: var(--color-four);
 	}
 	
 	.main-header .mobile-nav-toggler{
