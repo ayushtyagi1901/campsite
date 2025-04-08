@@ -158,9 +158,9 @@
 	z-index: 1;
 	width: 248px;
 	height:248px;
-	opacity: 0.08;
+	opacity: 0.12;
 	border-radius:50%;
-	background-color: var(--color-three);
+	background-color: var(--color-five);
 }
 
 .slider-one_color-two{
@@ -170,9 +170,9 @@
 	z-index: 1;
 	width: 248px;
 	height:248px;
-	opacity: 0.08;
+	opacity: 0.12;
 	border-radius:50%;
-	background-color: var(--color-three);
+	background-color: var(--color-five);
 }
 
 .slider-one_color-three{
@@ -182,9 +182,9 @@
 	z-index: 1;
 	width: 24px;
 	height:24px;
-	opacity: 0.08;
+	opacity: 0.12;
 	border-radius:50%;
-	background-color: var(--color-three);
+	background-color: var(--color-five);
 }
 
 .slider-one_color-four{
@@ -194,9 +194,9 @@
 	z-index: 1;
 	width: 31px;
 	height:31px;
-	opacity: 0.08;
+	opacity: 0.12;
 	border-radius:50%;
-	background-color: var(--color-three);
+	background-color: var(--color-five);
 }
 
 .slider-one_shadow{
