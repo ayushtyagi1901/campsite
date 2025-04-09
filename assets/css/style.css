@@ -6031,6 +6031,12 @@
 	padding:70px 0px 20px;
 }
 
+@media (min-width: 992px) {
+	.info-block_one-inner {
+	  min-height: 230px;
+	}
+  }
+
 .info-block_one{
 	position:relative;
 	margin-bottom:30px;
