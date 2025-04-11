@@ -117,11 +117,11 @@
 						<div class="auto-container">
 							<div class="row clearfix">
 								<!-- Content Column -->
-								<div class="slider-one_content col-lg-6 col-md-12 col-sm-12">
+								<div id="sliderContent" class="slider-one_content col-lg-6 col-md-12 col-sm-12">
 									<div class="slider-one_content-inner">
 										<div class="slider-one_title">Online Summer Camp</div>
 										<h1 class="slider-one_heading"
-											style="font-weight: bold; font-family: 'Montserrat', sans-serif;">
+											style="font-weight: bold; font-family: 'Montserrat', sans-serif; line-height: 1;">
 											LEAP &<br><span style="letter-spacing: 0.05em;">LEARN</span>
 										</h1>
 										<div style="
@@ -251,8 +251,7 @@
             margin-right: 10px;
         "></div>
 												<span
-													style="font-size: 16px; color: #333; font-weight: bold;">Certificated
-													Courses</span>
+													style="font-size: 16px; color: #333; font-weight: bold;">Completion Certificates</span>
 											</div>
 
 											<div style="display: flex; align-items: center;">
@@ -749,6 +748,19 @@
 		</svg>
 	</div>
 
+
+	<script>
+		const el = document.getElementById('sliderContent');
+		if (window.innerWidth >= 992) { // Bootstrap's lg breakpoint
+		  el.style.transform = 'translateX(100px)'; // adjust the px as needed
+		}
+	  </script>
+	  <script>
+		const sliderImageCol = document.querySelector('.slider-one_image-column');
+		if (window.innerWidth >= 992) { // desktop screens (Bootstrap lg breakpoint)
+		  sliderImageCol.style.transform = 'translateX(-100px)'; // Shift left, adjust px if needed
+		}
+	  </script>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
