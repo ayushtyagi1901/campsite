@@ -751,20 +751,15 @@
 
 	<script>
 		const el = document.getElementById('sliderContent');
+		const sliderImageCol = document.querySelector('.slider-one_image-column');
+	  
 		if (window.innerWidth >= 992) { // Bootstrap's lg breakpoint
-		  el.style.transform = 'translateX(100px)'; // adjust the px as needed
-		  el.style.transform = 'translateY(-80px)'; // adjust the px as needed
+		  el.style.transform = 'translate(100px, -80px)';
+		  sliderImageCol.style.transform = 'translate(-100px, -80px)';
 		}
 	  </script>
 
 	  
-	  <script>
-		const sliderImageCol = document.querySelector('.slider-one_image-column');
-		if (window.innerWidth >= 992) { // desktop screens (Bootstrap lg breakpoint)
-		  sliderImageCol.style.transform = 'translateX(-100px)'; // Shift left, adjust px if needed
-		  sliderImageCol.style.transform = 'translateY(-80px)'; // Shift left, adjust px if needed
-		}
-	  </script>
 
 
 
