@@ -1445,6 +1445,24 @@
 	color: black;
   }
 
+  .join-now-button {
+	display: inline-block;
+	padding: 12px 30px;
+	background-color: var(--color-five); /* You can change this color */
+	color: var(--main-color);
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	border-radius: 50px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.join-now-button:hover {
+	background-color: var(--color-six); /* Slightly darker for hover effect */
+	color: var(--color-four); /* Change text color on hover */
+}
+
   .program-block_one-strip {
 	background-color: #f7f0d4; /* Light yellow tone or brand-matching highlight */
 	color: #a86a00; /* Dark amber or brand highlight color */
