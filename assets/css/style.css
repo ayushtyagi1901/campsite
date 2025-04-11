@@ -1430,7 +1430,7 @@
 .cylindrical-button {
 	display: inline-block;
 	padding: 10px 25px;
-	background-color: #007bff; /* Change to your brand color */
+	background-color: var(--color-five); /* Change to your brand color */
 	color: white;
 	border: none;
 	border-radius: 999px;
@@ -1440,9 +1440,22 @@
   }
   
   .cylindrical-button:hover {
-	background-color: #0056b3; /* Slightly darker on hover */
+	background-color: var(--color-six); /* Slightly darker on hover */
 	text-decoration: none;
-	color: white;
+	color: black;
+  }
+
+  .program-block_one-strip {
+	background-color: #f7f0d4; /* Light yellow tone or brand-matching highlight */
+	color: #a86a00; /* Dark amber or brand highlight color */
+	font-weight: 600;
+	padding: 8px 15px;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
 .program-block_one.style-two .program-block_one-inner:before{
