@@ -223,7 +223,7 @@
 	position: relative;
 	font-size: 1.8em;
 	margin-left: 10px;
-	margin-bottom: 1.5em;
+	margin-bottom: 0em;
 	line-height: 24px;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -248,7 +248,7 @@
 }
 
 .slider-one_heading{
-	margin-top: 0.7em;
+	margin-top: 0.5em;
 	margin-bottom:25px;
 	line-height: 0.8em;
 	color: var(--color-five);

@@ -473,7 +473,7 @@
 	var slider = new Swiper('.main-slider', {
 		slidesPerView: 1,
 		spaceBetween: 0,
-		loop: true,
+		loop: false,
 		autoplay: {
 			enabled: true,
 			delay: 6000
