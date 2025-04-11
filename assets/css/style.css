@@ -156,9 +156,9 @@
 	left: -60px;
 	top: -50px;
 	z-index: 1;
-	width: 248px;
-	height:248px;
-	opacity: 0.12;
+	width: 200px;
+	height:200px;
+	opacity: 0.8;
 	border-radius:50%;
 	background-color: var(--color-five);
 }
@@ -170,7 +170,7 @@
 	z-index: 1;
 	width: 248px;
 	height:248px;
-	opacity: 0.12;
+	opacity: 0.2;
 	border-radius:50%;
 	background-color: var(--color-five);
 }
@@ -182,7 +182,7 @@
 	z-index: 1;
 	width: 24px;
 	height:24px;
-	opacity: 0.12;
+	opacity: 0.2;
 	border-radius:50%;
 	background-color: var(--color-five);
 }
@@ -1413,6 +1413,7 @@
 	font-size:24px;
 	font-weight:600;
 	color:var(--color-four);
+	
 }
 
 .program-block_one-join i{
@@ -1423,8 +1424,26 @@
 }
 
 .program-block_one-join:hover{
-	color:var(--main-color);
+	color:var(--color-five);
 }
+
+.cylindrical-button {
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: #007bff; /* Change to your brand color */
+	color: white;
+	border: none;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background-color 0.3s ease;
+  }
+  
+  .cylindrical-button:hover {
+	background-color: #0056b3; /* Slightly darker on hover */
+	text-decoration: none;
+	color: white;
+  }
 
 .program-block_one.style-two .program-block_one-inner:before{
 	position:absolute;
