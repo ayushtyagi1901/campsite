@@ -29,6 +29,98 @@
 
 ***/
 
+.header-lower {
+	background:transparent;
+	padding: 10px 0;
+	position: relative;
+	z-index: 10;
+  }
+  
+  .nav-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+  }
+  
+  .logo img {
+	height: 40px;
+	transition: 0.3s ease;
+  }
+  
+  .navbar-toggler {
+	display: none;
+	font-size: 28px;
+	background: none;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Navigation content (buttons etc.) */
+  .nav-content {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+  }
+  
+  .auth-buttons a.green-btn {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	margin-left: 10px;
+	display: inline-block;
+  }
+  
+  .auth-buttons a.green-btn:hover {
+	background-color: #218838;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* === Responsive Mobile Styling === */
+  @media (max-width: 768px) {
+	.logo img {
+	  height: 28px;
+	}
+  
+	.navbar-toggler {
+	  display: block;
+	}
+  
+	.nav-content {
+	  display: none;
+	  width: 100%;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 10px;
+	  background: transparent;
+	  padding: 1em;
+	  margin-top: 10px;
+	}
+  
+	.nav-content.active {
+	  display: flex;
+	}
+  
+	.auth-buttons {
+	  width: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	}
+  
+	.auth-buttons a.green-btn {
+	  width: 100%;
+	  text-align: center;
+	  font-size: 14px;
+	  padding: 8px 0;
+	}
+  }
+
 .slider-one{
 	position:relative;
 	background-color:var(--color-four);
@@ -2327,6 +2419,24 @@
 .default-form .form-group button{
 	margin-top: 15px;
 }
+
+.green-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .green-btn:hover {
+    background-color: #218838;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 
 /*** 
 
