@@ -141,7 +141,7 @@
 										</div>
 
 										<!-- Pointers -->
-										<div style="width: max-content; margin-top: 15px;">
+										<div id="dateblock" style="width: max-content; margin-top: 15px;">
 										<div style="
     display: grid; 
         grid-template-columns: repeat(2, 1fr); 
@@ -747,6 +747,14 @@
 		</svg>
 	</div>
 
+	<script>
+		// Scale down for mobile devices
+		if (window.innerWidth <= 768) {
+		  const dateblock = document.getElementById('dateblock');
+		  dateblock.style.transform = 'scale(0.7)';
+		  dateblock.style.transformOrigin = 'top left'; // Adjust origin if needed
+		}
+	  </script>
 
 	<script>
 		const el = document.getElementById('sliderContent');
