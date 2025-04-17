@@ -1029,4 +1029,25 @@
 		handlePreloader();
 	});	
 
+	function attemptCustomLogic(retriesLeft) {
+		if (retriesLeft <= 0) {
+		  console.warn('customLogicAfterLogin not executed: no retries left.');
+		  return;
+		}
+	  
+		if (typeof customLogicAfterLogin === "function") {
+		  console.log('customLogicAfterLogin found, executing...');
+		  customLogicAfterLogin(function() {
+			window.top.location.href = 'https://leapandlearn.lighthouse-learning.com/';
+		  });
+		} else {
+		  console.log('customLogicAfterLogin not found, retrying...');
+		  setTimeout(() => attemptCustomLogic(retriesLeft - 1), 1000); // Retry after 1 second
+		}
+	  }
+	  
+	  $(window).on('load', function() {
+		attemptCustomLogic(3); // Attempt up to 3 times
+	  });
+
 })(window.jQuery);
