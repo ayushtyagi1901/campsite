@@ -1038,7 +1038,7 @@
 		if (typeof customLogicAfterLogin === "function") {
 		  console.log('customLogicAfterLogin found, executing...');
 		  customLogicAfterLogin(function() {
-			window.top.location.href = 'https://leapandlearn.lighthouse-learning.com/';
+			window.top.location.href = 'https://lms.lighthouse-learning.com/courses';
 		  });
 		} else {
 		  console.log('customLogicAfterLogin not found, retrying...');
