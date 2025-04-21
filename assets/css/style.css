@@ -8422,3 +8422,66 @@
 	  width: 90% !important;
 	}
   }
+
+
+  .coupon-input {
+    display: flex;
+    gap: 10px;
+}
+
+.coupon-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply-btn {
+    background-color: #fff3ee;
+    border: 1px solid #ff7e47;
+    color: #ff7e47;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.price-details-box {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price-line.total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.net-payable h2 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.pay-now-btn {
+    background-color: #ff7e47;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
